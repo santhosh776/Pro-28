@@ -35,7 +35,7 @@ function draw() {
 
   background(230);
 
-  
+  Engine.update(engine)
 
   //Add code for displaying text here!
   image(boy ,200,340,200,300);
@@ -50,8 +50,8 @@ function draw() {
   stoneObj.display();
   launcherObject.display();
   groundObject.display();
-
-  Engine.update(engine)
+  
+  
 }
 
 function mouseDragged()
