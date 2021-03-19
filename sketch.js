@@ -24,10 +24,10 @@ function setup() {
 	mango4=new mango(1100,200,30);
 	mango5=new mango(1190,200,30);
   mango6=new mango(1050,250,30);
-  stoneObj=new Stone(200,500,20);
+  stoneObj=new Stone(200,500,30);
 	treeObj=new tree(1050,580);
 	groundObject=new ground(width/2,600,width,20);
-  launcherObject = new Laucher(stoneObj.body,{x:235,y:420});
+  launcherObject = new Launcher(stoneObj.body,{x:235,y:420});
 	Engine.run(engine);
 }
 
@@ -50,6 +50,8 @@ function draw() {
   stoneObj.display();
   launcherObject.display();
   groundObject.display();
+
+  Engine.update(engine)
 }
 
 function mouseDragged()

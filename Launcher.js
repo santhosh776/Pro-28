@@ -12,7 +12,11 @@ class Launcher{
     }
   fly()
   {
-      this.launcher.bodyA=null
+      this.launcher.bodyA=null;
+  }
+  attach()
+  {
+      this.launcher.bodyA=body;
   }
     display(){
         if(this.launcher.bodyA){
